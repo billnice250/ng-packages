@@ -24,7 +24,7 @@ export class LoadingStateService {
    */
   setLoading(loading: boolean, url: string): void {
     if (!url) {
-      throw new Error('The request URL must be provided to the LoadingService.setLoading function');
+      throw new Error('The request URL must be provided to the LoadingStateService.setLoading function');
     }
     if (loading === true) {
       this.loadingMap.set(url, loading);

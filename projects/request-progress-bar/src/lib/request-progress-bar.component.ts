@@ -16,7 +16,7 @@ import { LoadingStateService } from './services/loading-state.service';
       state('true', style({ width: '100%' })),
       state('false', style({ width: '0%' })),
       transition('0 => 1', animate('1s ease-in')),
-      transition('1 => 0', animate('1s fade-out')),
+      transition('1 => 0', animate('1s ease-out')),
     ]),
   ],
 })

@@ -1,7 +1,27 @@
 {
-  "name": "request-progress-bar",
-  "version": "0.0.1",
+  "name": "@billnice/request-progress-bar",
+  "version": "1.0.6",
+  "description": "Get ready for an amazing request progress bar experience in your Angular apps! Simply add our component to your root component and watch as it automatically listens to all requests with its built-in interceptor. No manual triggers needed. Emulate the seamless progress bar used by YouTube and provide a smooth, intuitive experience for your users. Upgrade your app now with this easy-to-use and customizable progress bar package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billnice250/ng-packages.git"
+  },
+  "keywords": [
+    "Request Progress Bar",
+    "Youtube Progress Bar",
+    "Process",
+    "Bar",
+    "Progess Bar",
+    "ProgessBar"
+  ],
+  "author": "billnice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/billnice250/ng-packages/issues"
+  },
+  "homepage": "https://github.com/billnice250/ng-packages/blob/master/projects/request-progress-bar#readme",
   "peerDependencies": {
+    "@angular/animations": "^15.1.0",
     "@angular/common": "^15.1.0",
     "@angular/core": "^15.1.0"
   },
