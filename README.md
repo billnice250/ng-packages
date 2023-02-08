@@ -1,27 +1,61 @@
-# NgPackages
+# Request Progress Bar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+A fully customizable and easy-to-use request progress bar for your Angular applications. The package works by listening to all incoming requests via an HTTP interceptor, and displays the loading state to your users.
 
-## Development server
+## Features
+- Customizable bar color 
+- Automatically starts working when added to your root component
+- Option to set loading state manually
+- Animated transitions for a more user-friendly experience
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+You can install the `request-progress-bar` package using npm:
 
-## Code scaffolding
+```bash
+npm i @billnice/request-progress-bar
+```
+## Usage
+To use the Request Progress Bar component, you can add the `request-progress-bar` component to your root component, for example:
+    
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <request-progress-bar [barColor]="'#ff0000'"></request-progress-bar>
+    <router-outlet></router-outlet>
+  `,
+})
+export class AppComponent {}
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Make sure to include the RequestProgressBarModule in your AppModule:
+```ts
+import { RequestProgressBarModule } from '@billnice/request-progress-bar';
 
-## Build
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, RequestProgressBarModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+In the example above, the Request Progress Bar component is included in the root component and the color is set to red.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Options
+The Request Progress Bar component has the following options:
+- `barColor`: The color of the progress bar. Default value is `#ff0000`.
+- `IsLoading`: a boolean that controls the state of the progress bar.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Customizing the Progress Bar Color
 
-## Running end-to-end tests
+You can customize the color of the progress bar by setting the barColor input property.
+For example:
+```html
+    <request-progress-bar [barColor]="'#00ff00'" ></request-progress-bar>
+```
+In the example above, the color of the progress bar is set to green.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Conclusion
+The Request Progress Bar component is a convenient and easy-to-use solution for showing the progress of HTTP requests in your Angular application. With its built-in interceptor and customizable progress bar color, you can easily integrate it into your application and start using it right away.
