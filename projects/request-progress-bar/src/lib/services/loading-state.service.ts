@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class LoadingStateService {
-  isLoading : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  state : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   /**
    * Contains in-progress loading requests
    */
@@ -28,12 +28,12 @@ export class LoadingStateService {
     }
     if (loading === true) {
       this.loadingMap.set(url, loading);
-      this.isLoading .next(true);
+      this.state .next(true);
     }else if (loading === false && this.loadingMap.has(url)) {
       this.loadingMap.delete(url);
     }
     if (this.loadingMap.size === 0) {
-      this.isLoading.next(false);
+      this.state.next(false);
     }
   }
 }
