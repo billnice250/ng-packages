@@ -9,6 +9,9 @@
 # Node
 /node_modules
 /projects/*/node_modules
+/projects/*/dist
+/projects/*/.angular
+/projects/*/.angular/cache
 npm-debug.log
 yarn-error.log
 

@@ -11,6 +11,9 @@ A fully customizable and easy-to-use request progress bar for your Angular appli
 - Option to set loading state manually
 - Animated transitions for a more user-friendly experience
 
+## Demo
+You can see a demo of the Request Progress Bar component [here](https://billnice250.github.io/ng-packages/request-progress-bar).
+
 ## Installation
 You can install the `request-progress-bar` package using npm:
 
