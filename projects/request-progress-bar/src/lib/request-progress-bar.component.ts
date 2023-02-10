@@ -33,7 +33,7 @@ export class RequestProgressBarComponent {
   @Input() isLoading: boolean = false;
   constructor(private loaderService: LoadingStateService) {
     loaderService.state.subscribe((v) => {
-      console.log('loading: ', v);
+      //console.log('loading: ', v);
       this.isLoading = v;
     });
   }

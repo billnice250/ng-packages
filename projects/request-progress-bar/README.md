@@ -48,7 +48,7 @@ In the example above, the Request Progress Bar component is included in the root
 ## Options
 The Request Progress Bar component has the following options:
 - `barColor`: The color of the progress bar. Default value is `#ff0000`.
-- `IsLoading`: a boolean that controls the state of the progress bar.
+- `isLoading`: a boolean that controls the state of the progress bar.
 
 
 ## Customizing the Progress Bar Color
@@ -59,6 +59,14 @@ For example:
     <request-progress-bar [barColor]="'#00ff00'" ></request-progress-bar>
 ```
 In the example above, the color of the progress bar is set to green.
+
+## Manually Setting the Loading State
+You can manually set the loading state of the progress bar by setting the `isLoading` input property.
+For example:
+```html
+    <request-progress-bar [isLoading]="true"></request-progress-bar>
+```
+In the example above, the progress bar is set to the loading state. You can set this property to another dynamic value to control the loading state of the progress bar.
 
 ## Conclusion
 The Request Progress Bar component is a convenient and easy-to-use solution for showing the progress of HTTP requests in your Angular application. With its built-in interceptor and customizable progress bar color, you can easily integrate it into your application and start using it right away.
