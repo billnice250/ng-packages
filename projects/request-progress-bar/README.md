@@ -12,7 +12,13 @@ A fully customizable and easy-to-use request progress bar for your Angular appli
 - Animated transitions for a more user-friendly experience
 
 ## Demo
-You can see a demo of the Request Progress Bar component [here](https://billnice250.github.io/ng-packages/test-mypackage).
+You can see a demo of the Request Progress Bar component [here](https://github.com/billnice250/ng-packages/blob/master/projects/request-progress-bar-example#readme).
+
+## Screenshots 
+![Request Progress Bar](https://raw.githubusercontent.com/billnice250/ng-packages/master/projects/request-progress-bar-example/src/assets/example_preview.gif)
+
+## Works best with
+- Angular 15+
 
 ## Installation
 You can install the `request-progress-bar` package using npm:
