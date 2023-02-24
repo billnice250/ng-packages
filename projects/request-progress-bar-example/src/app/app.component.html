@@ -1,6 +1,10 @@
 <request-progress-bar></request-progress-bar>
+<environment-banner [environment]="'Production'" [backgroundColor]="'#FF0000'"></environment-banner>
+
 <div>
   <h1>Testing request-progress-bar </h1>
   <button (click)="downloadGoogleHtmlFile()">Make request!</button>
   <p>Http GET request to <i>{{url}}</i>. <br>Downloaded <strong>{{count}}</strong> times.</p>
+  <br>
+  <h1>Testing Environment strip banner </h1>
 </div>

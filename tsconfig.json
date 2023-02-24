@@ -17,6 +17,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
+      "environment-strip-banner": [
+        "dist/environment-banner"
+      ],
       "request-progress-bar": [
         "dist/request-progress-bar"
       ]

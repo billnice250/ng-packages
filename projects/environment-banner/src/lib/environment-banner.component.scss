@@ -1,0 +1,18 @@
+.environment-banner {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-20%);
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
+.environment-label {
+  font-size: 16px;
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 20px;
+  color: white;
+}
